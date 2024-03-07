@@ -11,7 +11,7 @@ const App = () => {
 
   const fetchdata = async () => {
     try {
-      const response = await fetch("../data.json");
+      const response = await fetch("/data.json");
       const jsonData = await response.json();
       if (jsonData) {
         setData(jsonData);
